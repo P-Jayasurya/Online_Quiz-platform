@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>frame4</title>
+    <script>
+        function calc(){
+            var p =document.myform.p.value;
+            var t =document.myform.t.value;
+            
+            document.getElementById("val").innerHTML="Grade:"+p/t*100;
+        }
+    </script>
+</head>
+<body bgcolor="lightblue" align="center">
+    <h1> GRADE CALCULATOR</h1>
+    <form method="get" action="#" name="myform">
+        VALUE:<input type="text" name="p">
+        TOTAL:<input type="text" name="t"><br>
+         <input type="button" value ="grade" onclick="calc()">
+
+    </form>
+    <p id ="val">Grade :</p>
+
+</body>
+</html>

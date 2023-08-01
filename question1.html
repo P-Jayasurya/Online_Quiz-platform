@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>frame1</title>
+</head>
+<body >
+    <h1> QUESTION  1</h1>
+    <form action ="question2.php" method ="POST" target="question">
+    q1.How many districts are there in Telangana ? <br>
+        a.23<input type="radio" name ='q1' value="a">
+        b.24<input type="radio" name ='q1'value='b'> <br> c.31<input type="radio" name ='q1' value='c'> d.34<input type="radio" name ='q1' value='d'><br>
+        <input type ="submit" value="next" id="tout"> <a href="frame1.html" target="question"><input type="button" value="restartquiz"></a>
+</form>
+
+<p id="p" > hello</P>
+    <script > 
+    var t=10;
+    
+  inte=setTimeout(timer,1000,t); 
+  
+  function timer(time){
+  ti=time.toString();
+  document.getElementById("p").innerHTML = "timeleft : "+ti+" sec";
+  t=t-1;
+  if (t <0){
+  clearInterval(inte); 
+  document.getElementById("tout").click();
+}
+  
+  else
+   inte=setTimeout(timer,1000,t);
+  }
+  
+  
+  </script>
+</body>
+</html>

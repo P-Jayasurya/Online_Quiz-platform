@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>frame2</title>
+    <script>
+        function calc(){
+            var p =document.myform.p.value;
+            var t =document.myform.t.value;
+            var r =document.myform.r.value;
+            document.getElementById("val").innerHTML="Interest:"+p*t*r/100;
+        }
+    </script>
+</head>
+<body BGCOLOR="LIGHTBLUE" ALIGN="CENTER">
+    <h2> SIMPLE INTEREST</h2>
+    <form method="get" action="#" name="myform">
+        PRINCIPLE:<input type="text" name="p">
+       TIME:<input type="text" name="t"><br>
+        RATE:<input type ="text" name ='r'><br> <input type="button" value ="Interest" onclick="calc()">
+
+    </form>
+    <p id ="val">interest:</p>
+</body>
+</html>
